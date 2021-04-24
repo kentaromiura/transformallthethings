@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "ansi-colors": "4.1.1"
+    },
+    "devDependencies": {
+        "esbuild": "0.11.13"
+    }
+}

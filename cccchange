@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+/*
+    This is an example of a transform that doesn't use ASTs
+    but raw process the text.
+*/
+const fs = require('fs');
+
+// The input filename is passed 
+// as first parameter to the command
+const file = process.argv[2];
+
+// This reads all the content from the original source file
+const content = fs.readFileSync(file, 'utf8');
+
+// Here we write to STDOUT the result, replacing all calls to
+// ansi-color .yellow() with calls to .red()
+// making the output red instead of yellow.
+console.log(content.replace('.yellow', '.red'));
