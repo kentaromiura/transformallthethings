@@ -43,7 +43,7 @@ when looking for making a proof of concept I firstly tried a python example but 
 So, how does it works?
 ===
 
-If you place a transform.json file in your working directory 
+If you place a transforms.json file in your working directory 
 where you map a _regular expression_ to a _command_, 
 and then run `transform SOURCE_FOLDER MOUNT_FOLDER` it will mount your `SOURCE_FOLDER` in the `MOUNT_FOLDER` and will pre-execute _command_ for each file matching the _regular expression_.
 
